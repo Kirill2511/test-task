@@ -1,0 +1,6 @@
+<div *ngIf="audio" class="audio-player">
+  <h3>Проигрыватель: {{ audio.name }}</h3>
+  <audio [src]="'assets/audio/' + audio.fileName" controls>
+    Ваш браузер не поддерживает элемент audio.
+  </audio>
+</div>

@@ -1,0 +1,2 @@
+<app-audio-list (audioSelected)="onAudioSelected($event)" [audios]="(audios$ | async) ?? []"></app-audio-list>
+<app-audio-player [audio]="selectedAudio"></app-audio-player>

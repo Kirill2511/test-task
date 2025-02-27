@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mat-header-cell, .mat-cell {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.mat-header-row {
+  background-color: #f1f1f1;
+}
+
+.mat-row:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}

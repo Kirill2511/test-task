@@ -1,0 +1,19 @@
+<table [dataSource]="audios" aria-label="Audio table" mat-table>
+  <ng-container matColumnDef="id">
+    <th *matHeaderCellDef mat-header-cell> ID</th>
+    <td *matCellDef="let audio" mat-cell> {{ audio.id }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <th *matHeaderCellDef mat-header-cell> Наименование звука</th>
+    <td *matCellDef="let audio" mat-cell> {{ audio.name }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="fileName">
+    <th *matHeaderCellDef mat-header-cell> Имя файла</th>
+    <td *matCellDef="let audio" mat-cell> {{ audio.fileName }}</td>
+  </ng-container>
+
+  <tr *matHeaderRowDef="['id', 'name', 'fileName']" mat-header-row></tr>
+  <tr (click)="onRowClicked(row)" *matRowDef="let row; columns: ['id', 'name', 'fileName'];" mat-row></tr>
+</table>
